@@ -77,6 +77,20 @@ Ubuntu Community Outreach Foundation
 - Created a private GitHub repository.
 - Created the initial Git commit and pushed the project to GitHub.
 
+## Version 2.0 - Part 2
+
+* Added an external CSS stylesheet.
+* Added a CSS reset and base styles.
+* Added typography styling for headings, paragraphs and navigation.
+* Added a green colour scheme and visual styling.
+* Added Flexbox and responsive layout techniques.
+* Added hover effects for interactive navigation and buttons.
+* Added responsive design using media queries.
+* Added desktop, tablet and mobile breakpoints.
+* Added relative units such as rem, em and percentages.
+* Added responsive image styling.
+* Tested the website using Live Server.
+
 ### Future Updates
 
 - Part 2: Add CSS styling, layout, typography and responsive design.
@@ -87,3 +101,58 @@ Ubuntu Community Outreach Foundation
 - Mozilla Developer Network (MDN). (n.d.). HTML: HyperText Markup Language. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML
 - W3Schools. (n.d ).HTML Tutorial . Available at: https://www.w3schools.com/html/
 - GitHub Docs. (n.d.). GitHub Documentation. Available at: https://docs.github.com/
+
+# Part 2 – Designing the Visuals
+
+## CSS Styling
+
+The Ubuntu Community Outreach Foundation website was styled using an external CSS stylesheet. A CSS reset was implemented to provide consistent styling across different browsers. Base styles were also established for the body, headings, paragraphs, navigation, forms, images and footer.
+
+## Typography
+
+Typography was designed using Arial, Helvetica, sans-serif. Different font sizes, font weights, line heights and letter spacing were used for headings, paragraphs and navigation links to create a clear and readable website.
+
+## Layout Structure
+
+CSS Flexbox and responsive layout techniques were used to create a clear website structure. The layout includes a header, navigation area, main content area and footer. The design provides a simple and user-friendly experience.
+
+## Visual Design
+
+The website uses a green colour scheme to represent growth, community and development. Background colours, borders, spacing, buttons and hover effects were added to improve the visual appearance and usability of the website.
+
+## Responsive Design
+
+Media queries were added to ensure that the website adapts to different screen sizes. The navigation changes on smaller screens and the content padding and heading sizes are adjusted for mobile devices.
+
+The main responsive breakpoints used are:
+
+* Desktop: 1200px and above
+* Tablet: 768px
+* Mobile: 480px and below
+
+Relative units such as rem, em and percentages were used where appropriate to support responsive sizing.
+
+## Responsive Images
+
+The website uses responsive image techniques to ensure that images adjust to the available screen size. Images are set to a maximum width of 100% and maintain their aspect ratio.
+
+## Testing
+
+The website was tested using the Live Server environment in Microsoft Edge. The layout, navigation, text, images and styling were checked to ensure that the website functions correctly.
+
+## Part 2 Changelog
+
+* Added CSS reset and base styles.
+* Added typography styling for headings, paragraphs and navigation.
+* Added Flexbox and responsive layout styling.
+* Added visual colours, buttons and hover effects.
+* Added responsive design using media queries.
+* Added relative units for responsive sizing.
+* Improved image responsiveness.
+* Tested the website using Live Server.
+
+## References
+
+* Mozilla Developer Network (MDN). (n.d.). CSS: Cascading Style Sheets. Available from: https://developer.mozilla.org/en-US/docs/Web/CSS
+* Mozilla Developer Network (MDN). (n.d.). CSS media queries. Available from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries
+* W3Schools. (n.d.). CSS Tutorial. Available from: https://www.w3schools.com/css/

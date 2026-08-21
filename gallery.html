@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Page title displayed in the browser tab -->
     <title>Gallery - Ubuntu Community Outreach Foundation</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Header section containing the organisation name -->
     <header>
         <h1>Ubuntu Community Outreach Foundation</h1>
+        <p>Empowering Communities. Creating Opportunities.</p>
     </header>
 
-    <!-- Navigation menu linking to all website pages -->
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -24,45 +24,36 @@
         <a href="contact.html">Contact Us</a>
     </nav>
 
-    <!-- Main content section of the Gallery page -->
     <main>
-        <h2>Community Gallery</h2>
 
-        <p>
-            Our gallery highlights community outreach activities and
-            programmes that support and empower people in the community.
-        </p>
+        <section>
+            <h2>Community Gallery</h2>
 
-        <!-- Image showing a community outreach programme -->
-        <img src="images/community-outreach.jpg" alt="Community outreach programme">
+            <p>
+                Our gallery highlights community activities, outreach
+                programmes and events supported by the Ubuntu Community
+                Outreach Foundation.
+            </p>
 
-        <h2>Community Activities</h2>
+            <picture>
+                <source
+                    media="(max-width: 600px)"
+                    srcset="images/community%20-%20outreach.jpg">
 
-        <p>
-            Community activities provide opportunities for people to
-            participate, connect with others and work together to improve
-            their community.
-        </p>
+                <source
+                    media="(max-width: 1200px)"
+                    srcset="images/community%20-%20outreach.jpg">
 
-        <h2>Outreach Programmes</h2>
+                <img
+                    src="images/community%20-%20outreach.jpg"
+                    alt="Community outreach activity"
+                    loading="lazy">
+            </picture>
 
-        <p>
-            Our outreach programmes focus on providing support and
-            encouraging community development and participation.
-        </p>
+        </section>
 
-        <h2>Gallery Highlights</h2>
-
-        <!-- List of activities shown in the gallery -->
-        <ul>
-            <li>Community outreach activities</li>
-            <li>Community development programmes</li>
-            <li>Educational support activities</li>
-            <li>Community participation events</li>
-        </ul>
     </main>
 
-    <!-- Footer section containing copyright information -->
     <footer>
         <p>&copy; 2026 Ubuntu Community Outreach Foundation</p>
     </footer>
