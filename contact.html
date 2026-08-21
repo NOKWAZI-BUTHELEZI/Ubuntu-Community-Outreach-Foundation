@@ -4,66 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Page title displayed in the browser tab -->
     <title>Contact Us - Ubuntu Community Outreach Foundation</title>
+
+    <meta name="description" content="Contact Ubuntu Community Outreach Foundation for general enquiries, community support and information.">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Header section containing the organisation name -->
-    <header>
-        <h1>Ubuntu Community Outreach Foundation</h1>
-    </header>
+<header>
+    <h1>Ubuntu Community Outreach Foundation</h1>
+    <p>Empowering Communities. Creating Opportunities.</p>
 
-    <!-- Navigation menu linking to all website pages -->
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="services.html">Services</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact Us</a>
+        <a href="enquiry.html">Enquiry</a>
     </nav>
+</header>
 
-    <!-- Main content section of the Contact Us page -->
-    <main>
+<main>
+
+    <section>
         <h2>Contact Us</h2>
 
         <p>
-            We welcome enquiries from community members, partners and
-            anyone interested in learning more about Ubuntu Community
-            Outreach Foundation and its activities.
+            Please use the form below to send a general message
+            to Ubuntu Community Outreach Foundation.
         </p>
 
-        <h2>Contact Information</h2>
+        <form id="contactForm"
+              action="mailto:ubuntucommunity@example.com"
+              method="post"
+              enctype="text/plain">
 
-        <!-- List containing the organisation's contact details -->
-        <ul>
-            <li>Email: info@ubuntuoutreach.org</li>
-            <li>Phone: 012 345 6789</li>
-            <li>Location: Johannesburg, South Africa</li>
-        </ul>
+            <label for="contactName">Full Name:</label>
+            <input
+                type="text"
+                id="contactName"
+                name="name"
+                minlength="2"
+                required
+            >
 
-        <h2>Get Involved</h2>
+            <label for="contactEmail">Email Address:</label>
+            <input
+                type="email"
+                id="contactEmail"
+                name="email"
+                required
+            >
 
-        <p>
-            Community members can get involved by participating in
-            outreach activities, supporting community programmes and
-            sharing information about available services.
-        </p>
+            <label for="contactPhone">Phone Number:</label>
+            <input
+                type="tel"
+                id="contactPhone"
+                name="phone"
+                pattern="[0-9]{10}"
+                placeholder="e.g. 0712345678"
+                required
+            >
 
-        <h2>Enquiries</h2>
+            <label for="messageType">Message Type:</label>
+            <select id="messageType" name="messageType" required>
+                <option value="">-- Select a message type --</option>
+                <option value="general">General Enquiry</option>
+                <option value="support">Community Support</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
 
-        <p>
-            Please contact us for more information about our programmes,
-            services and community activities.
-        </p>
-    </main>
+            <label for="contactMessage">Message:</label>
+            <textarea
+                id="contactMessage"
+                name="message"
+                rows="6"
+                minlength="10"
+                required
+            ></textarea>
 
-    <!-- Footer section containing copyright information -->
-    <footer>
-        <p>&copy; 2026 Ubuntu Community Outreach Foundation</p>
-    </footer>
+            <button type="submit">Send Message</button>
+
+        </form>
+
+        <p id="contactResponse"></p>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Ubuntu Community Outreach Foundation. All Rights Reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>

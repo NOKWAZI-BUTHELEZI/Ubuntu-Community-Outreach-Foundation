@@ -1,86 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+// Ubuntu Community Outreach Foundation
+// Part 3 - JavaScript Functionality
 
-    <title>Home - Ubuntu Community Outreach Foundation</title>
+document.addEventListener("DOMContentLoaded", function () {
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    // Learn More button
+    const learnMoreBtn = document.getElementById("learnMoreBtn");
+    const moreInfo = document.getElementById("moreInfo");
 
-<body>
+    if (learnMoreBtn && moreInfo) {
+        learnMoreBtn.addEventListener("click", function () {
 
-    <!-- HEADER -->
-    <header>
-        <h1>Ubuntu Community Outreach Foundation</h1>
-        <p>Empowering Communities. Creating Opportunities.</p>
-    </header>
+            if (moreInfo.classList.contains("hidden")) {
+                moreInfo.classList.remove("hidden");
+                learnMoreBtn.textContent = "Show Less";
+            } else {
+                moreInfo.classList.add("hidden");
+                learnMoreBtn.textContent = "Learn More";
+            }
 
-    <!-- NAVIGATION -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
+        });
+    }
 
-    <!-- MAIN CONTENT -->
-    <main>
+    // Gallery lightbox
+    const galleryImages = document.querySelectorAll(".gallery-image");
 
-        <section>
-            <h2>Welcome to Ubuntu Community Outreach Foundation</h2>
+    galleryImages.forEach(function (image) {
 
-            <p>
-                Ubuntu Community Outreach Foundation is a community-focused
-                organisation committed to supporting and empowering individuals
-                and families through outreach programmes and community services.
-            </p>
+        image.addEventListener("click", function () {
 
-            <p>
-                The foundation aims to make a positive difference by promoting
-                community development, educational support and opportunities
-                that improve the lives of people in the community.
-            </p>
-        </section>
+            const lightbox = document.createElement("div");
+            lightbox.className = "lightbox";
 
-        <section>
-            <h2>Our Purpose</h2>
+            const largeImage = document.createElement("img");
+            largeImage.src = image.src;
+            largeImage.alt = image.alt;
 
-            <p>
-                Our purpose is to encourage unity, compassion and cooperation
-                while providing meaningful support to people who need assistance.
-            </p>
-        </section>
+            lightbox.appendChild(largeImage);
+            document.body.appendChild(lightbox);
 
-        <section>
-            <h2>What We Do</h2>
+            lightbox.addEventListener("click", function () {
+                lightbox.remove();
+            });
 
-            <ul>
-                <li>Support community outreach activities.</li>
-                <li>Promote educational development and support.</li>
-                <li>Encourage community participation and development.</li>
-                <li>Empower individuals through useful programmes and services.</li>
-            </ul>
-        </section>
+        });
 
-        <section>
-            <h2>Get Involved</h2>
+    });
 
-            <p>
-                Community members, volunteers and supporters are encouraged
-                to participate in our programmes and help us create positive
-                change in the community.
-            </p>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 Ubuntu Community Outreach Foundation</p>
-    </footer>
-
-</body>
-</html>
+});
